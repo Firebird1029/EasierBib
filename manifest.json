@@ -1,0 +1,48 @@
+{
+	"name": "EasierBib",
+	"description": "Removes ads for Easybib.com",
+	"version": "1.0.0",
+
+	"permissions": [
+		"tabs",
+		"activeTab",
+		"*://*.easybib.com/*"
+	],
+
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.easybib.com/*"],
+			"js": ["jquery-3.1.1.min.js", "removeAds.js"]
+		}
+	],
+
+	"browser_action": {
+		"default_icon": {
+			"16": "icons/transparent/16.png",
+			"24": "icons/transparent/24.png",
+			"32": "icons/transparent/32.png",
+			"48": "icons/transparent/48.png",
+			"64": "icons/transparent/64.png",
+			"128": "icons/transparent/128.png",
+			"256": "icons/transparent/256.png",
+			"512": "icons/transparent/512.png"
+		}
+	},
+
+	"icons": {
+		"16": "icons/transparent/16.png",
+		"24": "icons/transparent/24.png",
+		"32": "icons/transparent/32.png",
+		"48": "icons/transparent/48.png",
+		"64": "icons/transparent/64.png",
+		"128": "icons/transparent/128.png",
+		"256": "icons/transparent/256.png",
+		"512": "icons/transparent/512.png"
+	},
+
+	"manifest_version": 2
+}
