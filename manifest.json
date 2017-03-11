@@ -1,6 +1,7 @@
 {
 	"name": "EasierBib",
-	"description": "Removes ads for Easybib.com",
+	"short_name": "EasierBib",
+	"description": "Removes ads from Easybib.com",
 	"version": "1.0.0",
 
 	"permissions": [
