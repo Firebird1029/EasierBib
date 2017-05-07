@@ -6,7 +6,7 @@ var removeAds = setInterval(function () {
 			$(this).remove();
 			console.log("Removed flash iframe " + $(this).prop("id"));
 		}
-	})
+	});
 
 	// .not("main") prevents the removal of the actual content
 	$("[data-type=ads-keep-us-free]").parent().parent().parent().not("main").each(function removeAds () {
